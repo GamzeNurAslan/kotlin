@@ -1,0 +1,13 @@
+//numberTypes
+fun str(weight:Int,height:Int) : String {
+    val str = weight/(height*height)*703.07
+    return if (str<18.5)  "Underweight"
+    else if (str<25)     "Normal weight"
+    else "Overweight"
+}
+    fun main(){
+        val weight = 160
+        val height = 59
+        val status = str(weight,height)
+        println(status)
+}
