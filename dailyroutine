@@ -1,0 +1,18 @@
+fun main(){
+    val sunny = true
+    val hoursSleep = 5
+    val exercise = false
+    val temp = 45
+    
+    //1.possibility
+    val same=sunny && temp>50 || exercise && hoursSleep>6
+    println(same)
+    
+    //2.possibility
+    val same2=(sunny && temp>50) || (exercise && hoursSleep>6)
+    println(same2)
+    
+    //3.possibility
+    val same3=(sunny && temp>50 || exercise) && hoursSleep>6
+    println(same3)
+}
