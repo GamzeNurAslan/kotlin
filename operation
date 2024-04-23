@@ -1,0 +1,18 @@
+//operation
+fun main() {
+    var sum = 1
+    var sum2 = 26
+    val sum3 = 43
+    sum = sum + 4
+    sum += 7
+    sum2 %= 13
+    //sum3 /= 43 => val ile yazilmis
+    println(sum)
+    println(sum2)
+    println(sum3)
+}
+/*Output:
+12
+0
+43
+*/
