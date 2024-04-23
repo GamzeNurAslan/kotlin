@@ -1,0 +1,13 @@
+//valandvarexample
+fun main() {
+var x = 1
+    var y = 3
+    val temp = x
+    x = y
+    y = temp
+    println(x)
+    println(y)
+}/*Output:
+ 3
+ 1
+  */
