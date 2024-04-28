@@ -1,0 +1,12 @@
+fun factoriyel(number : Int): Long{
+    var result: Long = 1
+    for(i in 1..number){
+        result *= i.toLong()
+    }
+    return result
+}
+fun main(){
+   val number = 6
+    val result = factoriyel(number)
+    println("$number! = $result")
+    }
