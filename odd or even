@@ -1,0 +1,9 @@
+fun main(){
+    var number = 7
+    if(number % 2 == 0){
+        println("$ cift sayidir")
+    }
+    else{
+        println("$ tek sayidir")
+    }
+    }
