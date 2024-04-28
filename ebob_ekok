@@ -1,0 +1,22 @@
+fun ebob(number:Int,number2:Int):Int{
+    var ebob = 1
+    var i = 1
+    while(i <= number  &&  i <= number2){
+        if(number % i == 0  &&  number2 % i == 0){
+            ebob = i
+        }
+        i++
+    }
+       return ebob
+}
+fun ekok(number:Int,number2:Int):Int{
+    return (number*number2)/ebob(number,number2)
+}
+fun main(){
+    var number = 27
+    var number2 = 90
+     var ebob = ebob(number,number2)
+     var ekok = ekok(number,number2)
+        println("Ebob = $ebob")
+        println("Ekok = $ekok")
+}
