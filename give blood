@@ -1,0 +1,22 @@
+fun main(){
+    val age = 27
+    val c = "kadin"
+    val cinsiyet = "kadin"
+    val cinsiyet2 = "erkek"
+    val kandegeri = 10.0
+    if(age < 18){
+        println("$age yasindan kucuk olanlar kan veremezler")
+    }else{
+       if(c == cinsiyet){
+           if(12.5<=kandegeri && kandegeri<=15.5){
+               println("kan verebilir")
+           }else{
+               println("kan veremez")
+           }
+       }
+        if(c == cinsiyet2){
+            if(13.5<=kandegeri && kandegeri<=17.5){
+                println("kan verebilir")
+            }else{
+                println("kan veremez")
+            } }}}
