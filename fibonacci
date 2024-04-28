@@ -1,0 +1,15 @@
+fun fibonacci(number:Int):Long{
+    var x = 0L
+    var y = 1L
+    var temp : Long
+    for(i in 2..number){
+        temp = x + y
+        x = y
+        y = temp
+    }
+   return y
+}fun main(){
+    val number = 8
+    val fibo = fibonacci(number)
+println("$number sayisinin fibonacci degeri = $fibo")
+}
