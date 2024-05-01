@@ -1,3 +1,4 @@
+import java.util.Scanner;
 fun main(){
    println("İşlemi seçiniz : \n1.Toplama \n2.Çıkarma \n3.Çarpma \n4.Bölme")
     val k = Scanner(System.`in`)
