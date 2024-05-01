@@ -1,3 +1,4 @@
+import java.util.Scanner;
 fun main(){
     println("Doğum gününüzün ayını girin (1-12):")
     val ay = readLine()!!.toInt()
