@@ -1,0 +1,23 @@
+fun main(){
+    println("Doğum gününüzün ayını girin (1-12):")
+    val ay = readLine()!!.toInt()
+    println("Doğum gününüzün gününü girin:")
+    val gun = readLine()!!.toInt()
+
+    val burc = when(ay){
+        1 -> if(gun<22)  "Oğlak"  else "Kova"
+        2 -> if(gun<20)  "Kova"   else "Balık"
+        3 -> if(gun<21)  "Balık"  else "Koç"
+        4 -> if(gun<21)  "Koç"    else "Boğa"
+        5 -> if(gun<22)  "Boğa"   else "İkizler"
+        6 -> if(gun<23)  "İkizler"   else "Yengeç"
+        7 -> if(gun<23)  "Yengeç"   else "Aslan"
+        8 -> if(gun<23)  "Aslan"   else "Başak"
+        9 -> if(gun<23)  "Başak"   else "Terazi"
+        10 -> if(gun<23)  "Terazi"   else "Akrep"
+        11 -> if(gun<22)  "Akrep"   else "Yay"
+        12 -> if(gun<22)  "Yay"   else "Oğlak"
+        else -> "Geçersiz ay"
+    }
+    println("Burcunuz : $burc")
+}
