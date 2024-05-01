@@ -1,0 +1,15 @@
+import java.util.Scanner;
+fun main(){
+    val k = Scanner(System.`in`)
+    print("Kaç terimli bir harmonik seri toplamı istiyrosunuz ?= ")
+    val n = k.nextInt()
+    val harmonikToplam = harmonikTHesaplama(n)
+    println("Harmonik Toplam : $harmonikToplam")
+}
+fun harmonikTHesaplama(n:Int): Double{
+    var toplam = 0.0
+    for(i in 1..n){
+        toplam += 1.0/i
+    }
+    return toplam
+}
