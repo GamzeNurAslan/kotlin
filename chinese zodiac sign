@@ -1,0 +1,23 @@
+import java.util.Scanner;
+fun main(){
+    print("Doğum yılınızı girin:")
+    val yil = readLine()!!.toInt()
+
+    val zodyak = when(yil % 12){
+        0 -> "Maymun"
+        1 -> "Horoz"
+        2 -> "Köpek"
+        3 -> "Domuz"
+        4 -> "Fare"
+        5 -> "Öküz"
+        6 -> "Kaplan"
+        7 -> "Tavşan"
+        8 -> "Ejderha"
+        9 -> "Yılan"
+        10 -> "At"
+        11 -> "Koyun"
+        else -> "Geçersiz yil"
+
+    }
+    println("Çin_Zodyağı_Burcunuz :  $zodyak")
+}
