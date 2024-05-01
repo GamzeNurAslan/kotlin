@@ -1,0 +1,23 @@
+fun main(){
+   println("İşlemi seçiniz : \n1.Toplama \n2.Çıkarma \n3.Çarpma \n4.Bölme")
+    val k = Scanner(System.`in`)
+    //Kullanıcıdan işlem seçimi:
+    val select = k.next()
+    //İki sayıyı da kullanıcıdan al
+    print("Birinci sayıyı girin=")
+    val number1 = k.nextDouble()
+    print("İkinci sayıyı girin=")
+    val number2 = k.nextDouble()
+    val result = when (select){
+        "1" -> number1 + number2
+        "2" -> number1 - number2
+        "3" -> number1 * number2
+        "4" -> if(number2 != 0.0) {
+           number1/number2
+        }
+        else   "Geçersiz işlem"
+        else -> "Geçersiz operatör"
+    }
+    println("Sonuc: $result")
+    k.close()
+}
