@@ -1,0 +1,17 @@
+import java.util.Scanner;
+fun main(){
+    val k = Scanner(System.`in`)
+    print("Kullanıcı adınızı girin : ")
+    val userName = k.nextLine()
+    print("Şifrenizi girin : ")
+    val password = k.nextLine()
+    for(i in 0..3) {
+        if (userName.equals("Gamze_nur") && password.equals("gamze027")) {
+            println("Başarılı bir şekilde giriş yapıldı :)")
+            System.exit(1)
+        } else {
+            println("Tekrar deneyiniz :(")
+            System.exit(0)
+        }
+    }
+}
