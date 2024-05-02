@@ -1,0 +1,31 @@
+import java.util.Scanner;
+fun main(){
+    val k = Scanner(System.`in`)
+    print("Öğrencinin adı = ")
+    val str = k.nextLine()
+    println("-------------------")
+    var devamsızlık : Int = 0
+    System.out.print(str + " kaç devamsızlık yapmış?=")
+    devamsızlık = k.nextInt()
+    println("-------------------")
+    print("Vize notunu giriniz = ")
+    val V = k.nextInt()
+    println("--------------------")
+    print("Final notunu giriniz = ")
+    val F = k.nextInt()
+    println("--------------------")
+    val ortalama = V * 0.4 + F * 0.6
+    println(str +"'nin puanı = "+ortalama)
+    println("-----------------")
+    if(ortalama>=50){
+        println(str+" geçti:)")
+    }else{
+        println(str+" kaldı:(")
+    }
+    println("+++++++++++++++++++")
+    if(devamsızlık >= 4){
+        println(str+" devamsızlıktan kaldı")
+    }else{
+        println(str+" devamsızlıktan kalmadı")
+    }
+}
