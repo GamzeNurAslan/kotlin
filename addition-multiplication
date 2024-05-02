@@ -1,0 +1,18 @@
+import java.util.Scanner;
+fun main(){
+ var toplam = 0
+    var toplam2 = 0
+    var carpim = 1
+    for(value in 0..2){
+        for(value2 in 0..3){
+            for(value3 in 0..4){
+                toplam += (value+value2+value3)
+            }
+            carpim *= toplam
+            toplam = 0
+        }
+        toplam2 += carpim
+        carpim = 1
+    }
+    println(toplam2)
+}
