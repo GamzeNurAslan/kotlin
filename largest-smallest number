@@ -1,0 +1,20 @@
+import java.util.Scanner;
+fun main(){
+    val k = Scanner(System.`in`)
+    println("Arka arkaya 10 tane sayı yazınız:")
+    println("Yazdığınız bu 10 sayı arasından en büyük ve en küçük sayıyı bulun.")
+    var max : Int = 0
+    var min : Int = 0
+    for(i in 1..10){
+        println("sayıyı girin : "+i)
+        val n = k.nextInt()
+        if(i==1){
+            max = n
+            min = n
+        }
+        if(n>max)    max = n
+        if(n<min)    min = n
+    }
+    println("Girilen 10 sayıdan en büyüğü = "+ max)
+    println("Girilen 10 sayıdan en küçüğü = "+ min)
+}
