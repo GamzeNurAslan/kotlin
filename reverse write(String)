@@ -1,0 +1,26 @@
+import java.util.Scanner;
+fun main(){
+    val scanner = Scanner(System.`in`)
+    print("Bir metin girin: ")
+    val input = scanner.nextLine()
+
+    val reversed = input.reversed()
+
+    println("Ters çevrilmiş hali: $reversed")
+
+}
+//-----------------------------------------------//
+fun tersCevir(str : String): String {
+    var ters = ""
+    for(i in str.length - 1 downTo 0){
+        ters += str[i]
+    }
+    return ters
+}
+//----------------------------------------------//
+fun main(){
+    val str = "Gamze Nur Aslan"
+    val ters = tersCevir(str)
+    println(ters)
+}
+//----------------------------------------------//
