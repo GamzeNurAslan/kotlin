@@ -1,0 +1,17 @@
+import java.util.Scanner;
+fun birlestir(ilkMetin: String,ikinciMetin: String): String{
+    val k = Scanner(System.`in`)
+return ilkMetin+" "+ikinciMetin
+}
+fun main(){
+    print("Lütfen ilk metni girin : ")
+    val ilkMetin = readLine()
+    print("Lütfen ikinci metni girin : ")
+    val ikinciMetin = readLine()
+    if(ilkMetin != null  &&  ikinciMetin != null){
+        val birlesim = birlestir(ilkMetin,ikinciMetin)
+        println("Birleştirilmiş metin : $birlesim")
+    }else{
+        println("Hatalı giriş.Lütfen metinleri doğru bir şekilde girin :(")
+    }
+}
