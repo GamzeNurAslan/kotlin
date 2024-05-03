@@ -1,0 +1,18 @@
+import java.util.Scanner;
+fun enBuyukTekSayi(dizi:IntArray):Int? {
+    val k = Scanner(System.`in`)
+   var enBuyukTek: Int? = null
+    for(sayi in dizi){
+        if(sayi % 2 == 1){
+            if(enBuyukTek == null || sayi>enBuyukTek)      enBuyukTek =sayi
+        }
+    }
+    return enBuyukTek
+}
+fun main(){
+    val dizi = intArrayOf(3,8,56,99,65,2,76)
+    val enBuyukTek = enBuyukTekSayi(dizi)
+    if(enBuyukTek != null){
+        println("Dizinin en büyük tek sayısı = $enBuyukTek")
+    }
+}
