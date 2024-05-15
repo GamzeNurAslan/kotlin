@@ -1,0 +1,33 @@
+//Git-Github
+/**
+ * Git,bir versiyon kontrol sistemidir.Versiyon kontrol sistemi(VCS) projenizi geliştirirken yaptığınız değişiklikleri adım adım kaydedebileceğiniz
+ * ve isterseniz bunu internet üzerinde uzak bir depoda (remote repository) saklayabileceğiniz bir sistemdir.
+ * =>GİT:Yazılan şeylerin kaybolmasını engeller.
+ * =>Yazılan şey üzerindeki modifikasyonları sizin yerinize listeler.
+ *
+ * git init = Başlama gibi düşünülebilir.Bunu yazdıktan sonra terminalde .git dosyası oluşacaktır.(Bu dosya önemli!!!)
+ *
+ * git status = Üzerinde çalışılan projenin o anki durumu hakkında bilgi verir.Mesela yeni eklenmiş bir dosya olabilir,henüz git tarafından kontrol
+ * edilmeyen,git tarafında kontrol edilen ama modifiye edilmiş dosyalar olabilir ya da git tarafından kontrol edilen ama hiç değişiklik olmayan
+ * dosyalar olabilir.
+ *
+ * git add* = Eklenmeyen dosyaları klasörlere eklemek için kullanılan komuttur.
+ *
+ * Eğer ki git add* başlığı altında bütün dosyaları eklemek istemiyorsam o zaman da "git.add *.txt" kullanılabilir.
+ *
+ * git commit -m "dönem projesi v1.0 tamamlandı"
+ *
+ * git log = Değişiklik yapıldıysa eğer bu değişikliği yapan kişinin mail adresini,değişiklik yaptığı tarih ve saat,mesaj ile bunları haber eder.
+ * git log'da olan mail adresini değiştirebiliriz.Bunun içinde;
+ *          git config  -global user.name"Gamze Aslan"
+ *          aynı şekilde mail değiştireceksek de user.email dememiz yeterli :)
+ *
+ * git diff = Komutuyla o dosya üzerinde hangi satırlarda değişiklik olmuş bunu görebiliyoruz.
+ *        git diff  --staged  = Dosyada yapılan tüm değişiklikleri gösteren komuttur.
+ *
+ * Show diff = Yapılan değişiklikleri gösterir.
+ *
+ * Annotate with Git Blame = Bu değişiklikleri yapan kişinin kim olduğunu gösterir.
+ *
+ * git clone __(Bir projenin linki)__ bu komut ile de Github'ta bulunan o projeyi indirmiş oluyoruz.
+ */
