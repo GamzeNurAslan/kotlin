@@ -1,0 +1,20 @@
+fun asal(number: Int): Boolean {
+    if (number <= 1) {
+        return false
+    }
+    for (i in 2 until number) {
+        if (sayi % i == 0) {
+            return false
+        }
+    }
+    return true
+}
+
+fun main() {
+    println("2 ile 100 arasındaki asal sayılar:")
+    for (i in 2..100) {
+        if (asal(i)) {
+            println(i)
+        }
+    }
+}
